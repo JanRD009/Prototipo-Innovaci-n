@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- Bootswatch (Quarts theme) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/quartz/bootstrap.min.css">
+    <style>
+        /* Reducir el tamaño de los campos de entrada */
+        .form-control {
+            height: 28px; 
+            font-size: 12px; 
+            padding: 4px 8px; 
+        }
+        .form-label {
+            font-size: 12px; 
+        }
+        .btn {
+            height: 32px; 
+            font-size: 12px;
+        }
+        form {
+            max-width: 400px; 
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Formulario de Registro</h2>
+        <form id="registrationForm">
+            <div class="mb-2">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo" required>
+            </div>
+            <div class="mb-2">
+                <label for="apellidoPaterno" class="form-label">Apellido Paterno</label>
+                <input type="text" class="form-control" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido Paterno" required>
+            </div>
+            <div class="mb-2">
+                <label for="apellidoMaterno" class="form-label">Apellido Materno</label>
+                <input type="text" class="form-control" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido Materno" required>
+            </div>
+            <div class="mb-2">
+                <label for="fecha" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="fecha" name="fecha" required>
+            </div>
+            <div class="mb-2">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+            </div>
+            <div class="mb-2">
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
